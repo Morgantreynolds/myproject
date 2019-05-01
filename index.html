@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <title>Generic - Phantom by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        html {
+        scroll-behavior: smooth;
+    }
+
+            .title{
+                text-transform: none;
+            }
+            #ami {
+                font-weight: 100;
+            }
+            #go {
+                font-weight: 900;
+            }
+        #homeHeader{
+            text-align: center;
+            padding-bottom: 200px;
+            padding-top: 100px;
+        }
+        h1{
+            letter-spacing: 5px;
+        }
+        
+        .about{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px;
+            width: 100%; 
+            justify-content: space-around;
+        }
+        
+        #p1{
+           width: 25%; 
+        }
+        #p2{
+            width: 25%;
+        }
+        #p3{
+            width: 25%;
+        }
+        #explore{
+            margin-right: 20px;
+        }
+        
+        
+</style>
+</head>
+
+<body class="is-preload">
+    
+    
+    
+    
+    
+    
+    
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+
+                <a href="index.html" class="logo">
+                    <span class="symbol">
+                    </span><span class="title"><span id="ami">ami</span><span id="go">GO</span></span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <div id= "homeHeader"><h1>COLLABORATIVE TRAVEL PLANNING</h1>
+                <div id="buttons">
+                 <a href="explore.html">
+                     <button id="explore">Explore</button></a>
+                 <a href="signup.html"><button id="signUp">Sign Up</button></a>                     
+                </div>
+                </div>
+                <span class="image main"><img src="images/grouptrip.jpg" alt="" /></span>
+                <parent class="about">
+                <child id="p1"><h3>Explore</h3>
+                <p>Find inspiration from other user itineraries on the Explore feed or create your very own.</p>
+                </child>    
+                <child id="p2">
+                <h3>Collaborate</h3>    
+                <p>Invite your amigos to collaborate. Nail down dates, coordinate activities, and share your travel plans — all in one place!</p></child>
+                <child id="p3">
+                <h3>Experience</h3>    
+                <p>With your travel itinerary on your mobile device, you'll be free to enjoy your travel experience without the headache of unorganized group travel planning.</p></child>
+                </parent>    
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2>Get in touch</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2>Follow</h2>
+                    <ul class="icons">
+                        <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Untitled. All rights reserved</li>
+                    <li>Morgan Reynolds</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAUxDcZucH5nJ7fV2z5qi_o_mWKwwcphsk",
+    authDomain: "amigo-2d16b.firebaseapp.com",
+    databaseURL: "https://amigo-2d16b.firebaseio.com",
+    projectId: "amigo-2d16b",
+    storageBucket: "",
+    messagingSenderId: "275731047450"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="assets/js/newVue.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
